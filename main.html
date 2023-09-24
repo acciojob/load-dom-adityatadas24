@@ -9,6 +9,24 @@
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
+		 function onDOMLoad() {
+            // Create a new text node with the message
+            var textNode = document.createTextNode("DOM load success");
+
+            // Get the body element
+            var body = document.body;
+
+            // Remove any existing child nodes from the body
+            while (body.firstChild) {
+                body.removeChild(body.firstChild);
+            }
+
+            // Append the text node to the body
+            body.appendChild(textNode);
+        }
+
+        // Add an event listener for the "DOMContentLoaded" event
+        document.addEventListener("DOMContentLoaded", onDOMLoad);
 </script>
 
 </body>
