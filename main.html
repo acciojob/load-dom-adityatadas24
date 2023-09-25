@@ -9,6 +9,18 @@
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
+		 function domloaded() {
+		 const messageDiv = document.getElementById("message");
+
+     
+            const textNode = document.createTextNode("DOM load success");
+
+        
+            messageDiv.appendChild(textNode);
+
+          
+    }
+   document.addEventListener("DOMContentLoaded", domLoaded);
 	
 </script>
 
